@@ -119,7 +119,7 @@
       <AssemblyReference>System.Linq.Queryable</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1473.2,8446.4" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1473.2,1878.4" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="ProjectPath" />
       <Variable x:TypeArguments="s:String[]" Name="States" />
@@ -137,9 +137,16 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:GetEnvironmentVariable DisplayName="Get Environment Variable" sap:VirtualizedContainerService.HintSize="824,112.8" sap2010:WorkflowViewState.IdRef="GetEnvironmentVariable_1" Variable="CurrentDirectory" VariableValue="[ProjectPath]" />
-    <ui:BuildDataTable DataTable="[DT_WriteData]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="824,92" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;Address&quot; msdata:DataType=&quot;System.Object, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e&quot; msdata:Caption=&quot;&quot; type=&quot;xs:anyType&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Rating&quot; msdata:DataType=&quot;System.Object, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e&quot; msdata:Caption=&quot;&quot; type=&quot;xs:anyType&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;" />
-    <ui:MultipleAssign DisplayName="States Array" sap:VirtualizedContainerService.HintSize="824,149.6" sap2010:WorkflowViewState.IdRef="MultipleAssign_3">
+    <ui:GetEnvironmentVariable DisplayName="Get Environment Variable" sap:VirtualizedContainerService.HintSize="616,56.8" sap2010:WorkflowViewState.IdRef="GetEnvironmentVariable_1" Variable="CurrentDirectory" VariableValue="[ProjectPath]">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:GetEnvironmentVariable>
+    <ui:BuildDataTable DataTable="[DT_WriteData]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="616,92" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;Address&quot; msdata:DataType=&quot;System.Object, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e&quot; msdata:Caption=&quot;&quot; type=&quot;xs:anyType&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Rating&quot; msdata:DataType=&quot;System.Object, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e&quot; msdata:Caption=&quot;&quot; type=&quot;xs:anyType&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;" />
+    <ui:MultipleAssign DisplayName="States Array" sap:VirtualizedContainerService.HintSize="616,56.8" sap2010:WorkflowViewState.IdRef="MultipleAssign_3">
       <ui:MultipleAssign.AssignOperations>
         <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
           <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_12">
@@ -154,12 +161,12 @@
       </ui:MultipleAssign.AssignOperations>
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:MultipleAssign>
-    <ui:ReadTextFile File="{x:Null}" Content="[Current_IDX]" DisplayName="Start of States" FileName="[path.Combine(ProjectPath,&quot;State index.txt&quot;)]" sap:VirtualizedContainerService.HintSize="824,56.8" sap2010:WorkflowViewState.IdRef="ReadTextFile_5">
+    <ui:ReadTextFile File="{x:Null}" Content="[Current_IDX]" DisplayName="Start of States" FileName="[path.Combine(ProjectPath,&quot;State index.txt&quot;)]" sap:VirtualizedContainerService.HintSize="616,56.8" sap2010:WorkflowViewState.IdRef="ReadTextFile_5">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -167,7 +174,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:ReadTextFile>
-    <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="824,56.8" sap2010:WorkflowViewState.IdRef="MultipleAssign_9">
+    <ui:MultipleAssign DisplayName="States IDX" sap:VirtualizedContainerService.HintSize="616,56.8" sap2010:WorkflowViewState.IdRef="MultipleAssign_9">
       <ui:MultipleAssign.AssignOperations>
         <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
           <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_19">
@@ -187,13 +194,13 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:MultipleAssign>
-    <ui:ForEach x:TypeArguments="x:String" CurrentIndex="[IDX_1]" DisplayName="For Each currentText" sap:VirtualizedContainerService.HintSize="824,7955.2" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[States.Skip(State_IDX)]">
+    <ui:ForEach x:TypeArguments="x:String" CurrentIndex="[IDX_1]" DisplayName="For Each currentText in States Array" sap:VirtualizedContainerService.HintSize="616,1536" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[States.Skip(State_IDX)]">
       <ui:ForEach.Body>
         <ActivityAction x:TypeArguments="x:String">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:String" Name="currentText" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="822.4,7833.6" sap2010:WorkflowViewState.IdRef="Sequence_13">
+          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="614.4,1414.4" sap2010:WorkflowViewState.IdRef="Sequence_13">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:Int32" Name="IDX_2" />
             </Sequence.Variables>
@@ -202,7 +209,7 @@
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="788.8,56.8" sap2010:WorkflowViewState.IdRef="MultipleAssign_10">
+            <ui:MultipleAssign DisplayName="Set States IDX" sap:VirtualizedContainerService.HintSize="580.8,56.8" sap2010:WorkflowViewState.IdRef="MultipleAssign_10">
               <ui:MultipleAssign.AssignOperations>
                 <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
                   <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_20">
@@ -222,21 +229,21 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:MultipleAssign>
-            <ui:WriteTextFile File="{x:Null}" DisplayName="Write Text File" FileName="[path.Combine(ProjectPath,&quot;State index.txt&quot;)]" sap:VirtualizedContainerService.HintSize="788.8,166.4" sap2010:WorkflowViewState.IdRef="WriteTextFile_3" Text="[IDX_2.ToString]">
+            <ui:WriteTextFile File="{x:Null}" DisplayName="Write States IDX" FileName="[path.Combine(ProjectPath,&quot;State index.txt&quot;)]" sap:VirtualizedContainerService.HintSize="580.8,56.8" sap2010:WorkflowViewState.IdRef="WriteTextFile_3" Text="[IDX_2.ToString]">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:WriteTextFile>
-            <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: State Cities by Population (2025)" sap:VirtualizedContainerService.HintSize="788.8,7550.4" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" InteractionMode="DebuggerApi" ScopeGuid="2abfef87-5a58-4525-a324-a6f5826c6ab8" Version="V2">
+            <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Get all Cities in States having Population b/w 500,000 and 5,000" sap:VirtualizedContainerService.HintSize="580.8,1240.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" InteractionMode="DebuggerApi" ScopeGuid="2abfef87-5a58-4525-a324-a6f5826c6ab8" Version="V2">
               <uix:NApplicationCard.Body>
                 <ActivityAction x:TypeArguments="x:Object">
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                   </ActivityAction.Argument>
-                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="755.2,7310.4" sap2010:WorkflowViewState.IdRef="Sequence_14">
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="547.2,1000.8" sap2010:WorkflowViewState.IdRef="Sequence_14">
                     <Sequence.Variables>
                       <Variable x:TypeArguments="sd:DataTable" Name="CityData" />
                       <Variable x:TypeArguments="x:String" Name="currentState" />
@@ -248,12 +255,18 @@
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[CityData]" DelayBefore="5" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Table' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Rank' ReferenceIdx='0' Name='Rank'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='City' ReferenceIdx='1' Name='City'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Population' ReferenceIdx='2' Name='Population'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract-table get_columns_name='1' get_empty_columns='1' columns_name_source='Longest'&gt;&lt;column name='Rank' attr='fulltext' /&gt;&lt;column name='City' attr='fulltext' /&gt;&lt;column name='Population' attr='fulltext' /&gt;&lt;/extract-table&gt;" sap:VirtualizedContainerService.HintSize="721.6,189.6" sap2010:WorkflowViewState.IdRef="NExtractData_2" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="2abfef87-5a58-4525-a324-a6f5826c6ab8" Version="V4">
+                    <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[CityData]" DelayBefore="5" DisplayName="Extract Cities" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Table' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Rank' ReferenceIdx='0' Name='Rank'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='City' ReferenceIdx='1' Name='City'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Population' ReferenceIdx='2' Name='Population'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract-table get_columns_name='1' get_empty_columns='1' columns_name_source='Longest'&gt;&lt;column name='Rank' attr='fulltext' /&gt;&lt;column name='City' attr='fulltext' /&gt;&lt;column name='Population' attr='fulltext' /&gt;&lt;/extract-table&gt;" sap:VirtualizedContainerService.HintSize="513.6,56.8" sap2010:WorkflowViewState.IdRef="NExtractData_2" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="2abfef87-5a58-4525-a324-a6f5826c6ab8" Version="V4">
                       <uix:NExtractData.Target>
                         <uix:TargetAnchorable BrowserURL="https://www.ohio-demographics.com/cities_by_population" DesignTimeRectangle="150, 225, 1049, 64945" DesignTimeScaleFactor="1.25" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;" Guid="9e3f08a1-d00b-4b47-8938-f3f204197211" InformativeScreenshot="4d65466306f44835a4d671e98688e84f.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Ohio Cities by Population (2025)' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
                       </uix:NExtractData.Target>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
                     </uix:NExtractData>
-                    <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="721.6,180" sap2010:WorkflowViewState.IdRef="MultipleAssign_20">
+                    <ui:MultipleAssign DisplayName="City Index File" sap:VirtualizedContainerService.HintSize="513.6,56.8" sap2010:WorkflowViewState.IdRef="MultipleAssign_20">
                       <ui:MultipleAssign.AssignOperations>
                         <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
                           <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_30">
@@ -274,8 +287,20 @@
                           </ui:AssignOperation>
                         </scg:List>
                       </ui:MultipleAssign.AssignOperations>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
                     </ui:MultipleAssign>
-                    <If Condition="[System.IO.File.Exists(cityIndexFile)]" sap:VirtualizedContainerService.HintSize="721.6,540" sap2010:WorkflowViewState.IdRef="If_9">
+                    <If Condition="[System.IO.File.Exists(cityIndexFile)]" DisplayName="If File Exists" sap:VirtualizedContainerService.HintSize="513.6,56.8" sap2010:WorkflowViewState.IdRef="If_9">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
                       <If.Then>
                         <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="512,200.8" sap2010:WorkflowViewState.IdRef="Sequence_41">
                           <sap:WorkflowViewStateService.ViewState>
@@ -335,7 +360,7 @@
                         </Sequence>
                       </If.Else>
                     </If>
-                    <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="721.6,149.6" sap2010:WorkflowViewState.IdRef="MultipleAssign_23">
+                    <ui:MultipleAssign DisplayName="Current City Counter" sap:VirtualizedContainerService.HintSize="513.6,56.8" sap2010:WorkflowViewState.IdRef="MultipleAssign_23">
                       <ui:MultipleAssign.AssignOperations>
                         <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
                           <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_33">
@@ -350,28 +375,28 @@
                       </ui:MultipleAssign.AssignOperations>
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                           <x:Boolean x:Key="IsPinned">False</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </ui:MultipleAssign>
-                    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[CityData]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="721.6,6189.6" sap2010:WorkflowViewState.IdRef="ForEachRow_3">
+                    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[CityData]" DisplayName="For Each Row in City Data Table" sap:VirtualizedContainerService.HintSize="513.6,712" sap2010:WorkflowViewState.IdRef="ForEachRow_3">
                       <ui:ForEachRow.Body>
                         <ActivityAction x:TypeArguments="sd:DataRow">
                           <ActivityAction.Argument>
                             <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
                           </ActivityAction.Argument>
-                          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="720,6015.2" sap2010:WorkflowViewState.IdRef="Sequence_15">
+                          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="512,537.6" sap2010:WorkflowViewState.IdRef="Sequence_15">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
-                            <If Condition="[currentCityCounter &lt; cityIndex]" sap:VirtualizedContainerService.HintSize="686.4,485.6" sap2010:WorkflowViewState.IdRef="If_10">
+                            <If Condition="[currentCityCounter &lt; cityIndex]" DisplayName="If currentCityCounter &lt; cityIndex" sap:VirtualizedContainerService.HintSize="478.4,56.8" sap2010:WorkflowViewState.IdRef="If_10">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
@@ -415,7 +440,7 @@
                                 </Sequence>
                               </If.Else>
                             </If>
-                            <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="686.4,149.6" sap2010:WorkflowViewState.IdRef="MultipleAssign_7">
+                            <ui:MultipleAssign DisplayName="Population" sap:VirtualizedContainerService.HintSize="478.4,56.8" sap2010:WorkflowViewState.IdRef="MultipleAssign_7">
                               <ui:MultipleAssign.AssignOperations>
                                 <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
                                   <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_17">
@@ -430,20 +455,20 @@
                               </ui:MultipleAssign.AssignOperations>
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
                             </ui:MultipleAssign>
-                            <If Condition="[Population&gt;=5000 and Population&lt;=500000]" sap:VirtualizedContainerService.HintSize="686.4,5012.8" sap2010:WorkflowViewState.IdRef="If_2">
+                            <If Condition="[Population&gt;=5000 and Population&lt;=500000]" DisplayName="If Population&gt;=5000 and Population&lt;=500000" sap:VirtualizedContainerService.HintSize="478.4,56.8" sap2010:WorkflowViewState.IdRef="If_2">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
                               <If.Then>
-                                <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="684.8,4766.4" sap2010:WorkflowViewState.IdRef="Sequence_16">
+                                <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="684.8,3875.2" sap2010:WorkflowViewState.IdRef="Sequence_16">
                                   <Sequence.Variables>
                                     <Variable x:TypeArguments="x:String" Name="City" />
                                   </Sequence.Variables>
@@ -452,7 +477,7 @@
                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
-                                  <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="651.2,149.6" sap2010:WorkflowViewState.IdRef="MultipleAssign_8">
+                                  <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="651.2,56.8" sap2010:WorkflowViewState.IdRef="MultipleAssign_8">
                                     <ui:MultipleAssign.AssignOperations>
                                       <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
                                         <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_18">
@@ -465,14 +490,20 @@
                                         </ui:AssignOperation>
                                       </scg:List>
                                     </ui:MultipleAssign.AssignOperations>
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
                                   </ui:MultipleAssign>
-                                  <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: apartments for rent - Google Search" sap:VirtualizedContainerService.HintSize="651.2,4556.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" OpenMode="Always" ScopeGuid="867e7609-f86d-490f-87d9-ae07344d5b83" Version="V2">
+                                  <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: apartments for rent - Google Search" sap:VirtualizedContainerService.HintSize="651.2,3758.4" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" OpenMode="Always" ScopeGuid="867e7609-f86d-490f-87d9-ae07344d5b83" Version="V2">
                                     <uix:NApplicationCard.Body>
                                       <ActivityAction x:TypeArguments="x:Object">
                                         <ActivityAction.Argument>
                                           <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                                         </ActivityAction.Argument>
-                                        <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="617.6,4316.8" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                                        <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="617.6,3518.4" sap2010:WorkflowViewState.IdRef="Sequence_12">
                                           <Sequence.Variables>
                                             <Variable x:TypeArguments="sd:DataTable" Name="DT_ApartmentData" />
                                             <Variable x:TypeArguments="x:Boolean" Name="NextPage" />
@@ -485,7 +516,7 @@
                                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                             </scg:Dictionary>
                                           </sap:WorkflowViewStateService.ViewState>
-                                          <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="584,149.6" sap2010:WorkflowViewState.IdRef="MultipleAssign_4">
+                                          <ui:MultipleAssign DisplayName="Next Page " sap:VirtualizedContainerService.HintSize="584,56.8" sap2010:WorkflowViewState.IdRef="MultipleAssign_4">
                                             <ui:MultipleAssign.AssignOperations>
                                               <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
                                                 <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_13">
@@ -498,9 +529,22 @@
                                                 </ui:AssignOperation>
                                               </scg:List>
                                             </ui:MultipleAssign.AssignOperations>
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
                                           </ui:MultipleAssign>
-                                          <ui:ReadTextFile File="{x:Null}" Content="[PageCount]" DisplayName="Read Text File" FileName="[Path.Combine(ProjectPath,&quot;Page Counter.txt&quot;)]" sap:VirtualizedContainerService.HintSize="584,112.8" sap2010:WorkflowViewState.IdRef="ReadTextFile_6" />
-                                          <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="584,149.6" sap2010:WorkflowViewState.IdRef="MultipleAssign_29">
+                                          <ui:ReadTextFile File="{x:Null}" Content="[PageCount]" DisplayName="Read Page Counter" FileName="[Path.Combine(ProjectPath,&quot;Page Counter.txt&quot;)]" sap:VirtualizedContainerService.HintSize="584,56.8" sap2010:WorkflowViewState.IdRef="ReadTextFile_6">
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                          </ui:ReadTextFile>
+                                          <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="584,56.8" sap2010:WorkflowViewState.IdRef="MultipleAssign_29">
                                             <ui:MultipleAssign.AssignOperations>
                                               <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
                                                 <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_37">
@@ -513,8 +557,14 @@
                                                 </ui:AssignOperation>
                                               </scg:List>
                                             </ui:MultipleAssign.AssignOperations>
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
                                           </ui:MultipleAssign>
-                                          <ui:InterruptibleWhile CurrentIndex="[PageCountIndex]" DisplayName="While" sap:VirtualizedContainerService.HintSize="584,371.2" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_2">
+                                          <ui:InterruptibleWhile CurrentIndex="[PageCountIndex]" DisplayName="While PageCountIndex&lt;&gt;PageCounter" sap:VirtualizedContainerService.HintSize="584,56.8" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_2">
                                             <ui:InterruptibleWhile.Body>
                                               <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="416,240.8" sap2010:WorkflowViewState.IdRef="Sequence_45">
                                                 <sap:WorkflowViewStateService.ViewState>
@@ -532,33 +582,39 @@
                                             <ui:InterruptibleWhile.Condition>
                                               <VisualBasicValue x:TypeArguments="x:Boolean" DisplayName="Visual basic value" ExpressionText="PageCountIndex&lt;&gt;PageCounter" />
                                             </ui:InterruptibleWhile.Condition>
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
                                           </ui:InterruptibleWhile>
-                                          <ui:InterruptibleWhile CurrentIndex="{x:Null}" Condition="[NextPage]" DisplayName="While" sap:VirtualizedContainerService.HintSize="584,3472" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_1">
+                                          <ui:InterruptibleWhile CurrentIndex="{x:Null}" Condition="[NextPage]" DisplayName="While NextPage is available " sap:VirtualizedContainerService.HintSize="584,3229.6" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_1">
                                             <ui:InterruptibleWhile.Body>
-                                              <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="582.4,3348.8" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                                              <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="582.4,3106.4" sap2010:WorkflowViewState.IdRef="Sequence_11">
                                                 <sap:WorkflowViewStateService.ViewState>
                                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                   </scg:Dictionary>
                                                 </sap:WorkflowViewStateService.ViewState>
-                                                <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[DT_ApartmentData]" DelayBefore="5" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='apartment name'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column5' Name='rating'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;row exact='1'&gt;&lt;webctrl tag='div' idx='3' /&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;/row&gt;&lt;column exact='1' name='Column0' attr='fulltext'&gt;&lt;webctrl tag='div' idx='3' /&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='span' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column5' attr='fulltext'&gt;&lt;webctrl tag='div' idx='3' /&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="548.8,189.6" sap2010:WorkflowViewState.IdRef="NExtractData_1" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="867e7609-f86d-490f-87d9-ae07344d5b83" Version="V4">
+                                                <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[DT_ApartmentData]" DelayBefore="5" DisplayName="Extract Data of that Page" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='apartment name'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column5' Name='rating'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;row exact='1'&gt;&lt;webctrl tag='div' idx='3' /&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;/row&gt;&lt;column exact='1' name='Column0' attr='fulltext'&gt;&lt;webctrl tag='div' idx='3' /&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='span' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column5' attr='fulltext'&gt;&lt;webctrl tag='div' idx='3' /&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="548.8,189.6" sap2010:WorkflowViewState.IdRef="NExtractData_1" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="867e7609-f86d-490f-87d9-ae07344d5b83" Version="V4">
                                                   <uix:NExtractData.Target>
                                                     <uix:TargetAnchorable BrowserURL="https://www.google.com/search?sca_esv=6803a1afa38366d6&amp;tbm=lcl&amp;sxsrf=AE3TifPF9QDNHYABxVD8xU9GH9_CL2aHtw:1754652277899&amp;q=cleveland%20apartments%20for%20rent&amp;rflfq=1&amp;num=10&amp;sa=X&amp;ved=2ahUKEwiL6Pu8jfuOAxWbzgIHHYf-H_cQwywoBnoECAQQGA&amp;biw=1536&amp;bih=695&amp;dpr=1.25&amp;rlfi=hd:;si:;start:80&amp;tbs=lrf:!1m4!1u3!2m2!3m1!1e1!1m4!1u2!2m2!2m1!1e1!1m5!1u2!2m2!2m1!2e9!4e2!2m1!1e3!2m4!1e2!5m2!2m1!2e4!3sIAE,lf:1,lf_ui:1&amp;rlst=f&amp;rlvp=clear#rlfi=hd:;si:17483315746225027526,a;mv:[[41.36141162246929,-80.90912368143738],[41.076266138607274,-81.63913289616997]];start:80&amp;rlvp=clear" DesignTimeRectangle="9, -2016, 572, 4699" DesignTimeScaleFactor="1.25" FullSelectorArgument="&lt;webctrl class='rl_tile-group' parentid='rl_ist0' tag='DIV' /&gt;" Guid="46cccfb7-a41f-4f94-adf3-b28c0da729b3" InformativeScreenshot="e2fc23ef77cb584d05d3c840896466fd.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='cleveland apartments for rent - Google Search' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
                                                   </uix:NExtractData.Target>
                                                 </uix:NExtractData>
-                                                <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[DT_ApartmentData]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="548.8,2109.6" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
+                                                <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[DT_ApartmentData]" DisplayName="For Each Row in DT_ApartmentData" sap:VirtualizedContainerService.HintSize="548.8,1867.2" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
                                                   <ui:ForEachRow.Body>
                                                     <ActivityAction x:TypeArguments="sd:DataRow">
                                                       <ActivityAction.Argument>
                                                         <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
                                                       </ActivityAction.Argument>
-                                                      <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="547.2,1928" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                                                      <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="547.2,1685.6" sap2010:WorkflowViewState.IdRef="Sequence_7">
                                                         <sap:WorkflowViewStateService.ViewState>
                                                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                           </scg:Dictionary>
                                                         </sap:WorkflowViewStateService.ViewState>
-                                                        <If Condition="[CurrentRow(&quot;rating&quot;).ToString.ToLower.Contains(&quot;no reviews&quot;)]" sap:VirtualizedContainerService.HintSize="513.6,477.6" sap2010:WorkflowViewState.IdRef="If_4">
+                                                        <If Condition="[CurrentRow(&quot;rating&quot;).ToString.ToLower.Contains(&quot;no reviews&quot;)]" DisplayName="If CurrentRow(&quot;rating&quot;).ToString.ToLower.Contains(&quot;no reviews&quot;)" sap:VirtualizedContainerService.HintSize="513.6,477.6" sap2010:WorkflowViewState.IdRef="If_4">
                                                           <If.Then>
                                                             <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="512,108" sap2010:WorkflowViewState.IdRef="Sequence_20">
                                                               <sap:WorkflowViewStateService.ViewState>
@@ -601,9 +657,9 @@
                                                             </Sequence>
                                                           </If.Else>
                                                         </If>
-                                                        <If Condition="[Rating&lt;=2.5]" sap:VirtualizedContainerService.HintSize="513.6,1390.4" sap2010:WorkflowViewState.IdRef="If_1">
+                                                        <If Condition="[Rating&lt;=2.5]" DisplayName="If Rating&lt;=2.5" sap:VirtualizedContainerService.HintSize="513.6,1148" sap2010:WorkflowViewState.IdRef="If_1">
                                                           <If.Then>
-                                                            <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="451.2,1171.2" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                                                            <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="451.2,928.8" sap2010:WorkflowViewState.IdRef="Sequence_5">
                                                               <Sequence.Variables>
                                                                 <Variable x:TypeArguments="x:String" Name="ApartmentAddress" />
                                                                 <Variable x:TypeArguments="x:Boolean" Name="Exists" />
@@ -613,13 +669,13 @@
                                                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                                 </scg:Dictionary>
                                                               </sap:WorkflowViewStateService.ViewState>
-                                                              <uix:NClick ActivateBefore="True" ClickType="Single" DelayBefore="5" DisplayName="Click Apartment" sap:VirtualizedContainerService.HintSize="417.6,189.6" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="867e7609-f86d-490f-87d9-ae07344d5b83" Version="V4">
+                                                              <uix:NClick ActivateBefore="True" ClickType="Single" DelayBefore="5" DisplayName="Click Apartment" sap:VirtualizedContainerService.HintSize="417.6,56.8" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="867e7609-f86d-490f-87d9-ae07344d5b83" Version="V4">
                                                                 <uix:NClick.Target>
                                                                   <uix:TargetAnchorable BrowserURL="https://www.google.com/search?sca_esv=6803a1afa38366d6&amp;tbm=lcl&amp;sxsrf=AE3TifPF9QDNHYABxVD8xU9GH9_CL2aHtw:1754652277899&amp;q=cleveland%20apartments%20for%20rent&amp;rflfq=1&amp;num=10&amp;sa=X&amp;ved=2ahUKEwj51rDcjfuOAxW1_7sIHa5KGq4QwywoAXoECAQQCQ&amp;biw=1536&amp;bih=695&amp;dpr=1.25&amp;rlfi=hd:;si:;start:60&amp;tbs=lrf:!1m4!1u3!2m2!3m1!1e1!1m4!1u2!2m2!2m1!1e1!1m5!1u2!2m2!2m1!2e4!4e2!2m1!1e3!2m4!1e2!5m2!2m1!2e9!3sIAE,lf:1,lf_ui:1&amp;rlst=f&amp;rlvp=clear&amp;fll=41.218838880538286,-81.27412828880367&amp;fspn=0.28514548386201,0.730009214732604&amp;fz=11&amp;sll=41.218838880538286,-81.27412828880367&amp;sspn=0.28514548386201,0.730009214732604&amp;sz=11#rlfi=hd:;si:;mv:[[43.0897108,-81.14866959999999],[41.3339424,-88.41562929999999]];start:80&amp;rlvp=clear" DesignTimeRectangle="29, 622, 216, 31" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="[string.Format(&quot;&lt;webctrl aaname='{0}' tag='SPAN' innertext='{0}' /&gt;&quot;, ApartmentName)]" Guid="eb28ae0a-3ddc-4e34-a92d-16cab75d742d" ImageBase64="" InformativeScreenshot="b23420bc43895b0d519f04a0e8dd2812.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='cleveland apartments for rent - Google Search' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
                                                                 </uix:NClick.Target>
                                                                 <sap:WorkflowViewStateService.ViewState>
                                                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                                                                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                                                   </scg:Dictionary>
                                                                 </sap:WorkflowViewStateService.ViewState>
@@ -643,8 +699,15 @@
                                                                   </scg:Dictionary>
                                                                 </sap:WorkflowViewStateService.ViewState>
                                                               </ui:AddDataRow>
-                                                              <ui:FileExistsX DisplayName="File Exists" Exists="[Exists]" sap:VirtualizedContainerService.HintSize="417.6,166.4" sap2010:WorkflowViewState.IdRef="FileExistsX_1" Path="[path.Combine(ProjectPath,&quot;Apartment Data&quot;,currentState &amp; &quot;.csv&quot;)]" />
-                                                              <If Condition="[Exists]" sap:VirtualizedContainerService.HintSize="417.6,641.6" sap2010:WorkflowViewState.IdRef="If_3">
+                                                              <ui:FileExistsX DisplayName="File Exists State wise Apartment Data" Exists="[Exists]" sap:VirtualizedContainerService.HintSize="417.6,56.8" sap2010:WorkflowViewState.IdRef="FileExistsX_1" Path="[path.Combine(ProjectPath,&quot;Apartment Data&quot;,currentState &amp; &quot;.csv&quot;)]">
+                                                                <sap:WorkflowViewStateService.ViewState>
+                                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                                  </scg:Dictionary>
+                                                                </sap:WorkflowViewStateService.ViewState>
+                                                              </ui:FileExistsX>
+                                                              <If Condition="[Exists]" DisplayName="If Exists" sap:VirtualizedContainerService.HintSize="417.6,641.6" sap2010:WorkflowViewState.IdRef="If_3">
                                                                 <If.Then>
                                                                   <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,256" sap2010:WorkflowViewState.IdRef="Sequence_18">
                                                                     <sap:WorkflowViewStateService.ViewState>
@@ -725,7 +788,7 @@
                                                           </scg:List>
                                                         </ui:MultipleAssign.AssignOperations>
                                                       </ui:MultipleAssign>
-                                                      <ui:WriteTextFile File="{x:Null}" DisplayName="Write Text File" FileName="[Path.Combine(ProjectPath,&quot;Page Counter.txt&quot;)]" sap:VirtualizedContainerService.HintSize="478.4,48" sap2010:WorkflowViewState.IdRef="WriteTextFile_9" Text="[PageCounter.ToString]">
+                                                      <ui:WriteTextFile File="{x:Null}" DisplayName="Write Page Counter +1" FileName="[Path.Combine(ProjectPath,&quot;Page Counter.txt&quot;)]" sap:VirtualizedContainerService.HintSize="478.4,48" sap2010:WorkflowViewState.IdRef="WriteTextFile_9" Text="[PageCounter.ToString]">
                                                         <sap:WorkflowViewStateService.ViewState>
                                                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                             <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -769,7 +832,7 @@
                                                               </scg:List>
                                                             </ui:MultipleAssign.AssignOperations>
                                                           </ui:MultipleAssign>
-                                                          <ui:WriteTextFile File="{x:Null}" DisplayName="Write Text File" FileName="[Path.Combine(ProjectPath,&quot;Page Counter.txt&quot;)]" sap:VirtualizedContainerService.HintSize="478.4,48" sap2010:WorkflowViewState.IdRef="WriteTextFile_10" Text="[PageCounter.ToString]">
+                                                          <ui:WriteTextFile File="{x:Null}" DisplayName="Page Counter 0" FileName="[Path.Combine(ProjectPath,&quot;Page Counter.txt&quot;)]" sap:VirtualizedContainerService.HintSize="478.4,48" sap2010:WorkflowViewState.IdRef="WriteTextFile_10" Text="[PageCounter.ToString]">
                                                             <sap:WorkflowViewStateService.ViewState>
                                                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                 <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -820,7 +883,7 @@
                                 </Sequence>
                               </If.Else>
                             </If>
-                            <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="686.4,149.6" sap2010:WorkflowViewState.IdRef="MultipleAssign_26">
+                            <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="478.4,149.6" sap2010:WorkflowViewState.IdRef="MultipleAssign_26">
                               <ui:MultipleAssign.AssignOperations>
                                 <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
                                   <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_35">
@@ -840,7 +903,7 @@
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
                             </ui:MultipleAssign>
-                            <ui:WriteTextFile File="{x:Null}" DisplayName="Write Text File" FileName="[path.Combine(ProjectPath,&quot;City Data&quot;,&quot;CityIndex_&quot; &amp; currentState &amp; &quot;.txt&quot;)]" sap:VirtualizedContainerService.HintSize="686.4,157.6" sap2010:WorkflowViewState.IdRef="WriteTextFile_8" Text="[currentCityCounter.ToString]" />
+                            <ui:WriteTextFile File="{x:Null}" DisplayName="Write Text File" FileName="[path.Combine(ProjectPath,&quot;City Data&quot;,&quot;CityIndex_&quot; &amp; currentState &amp; &quot;.txt&quot;)]" sap:VirtualizedContainerService.HintSize="478.4,157.6" sap2010:WorkflowViewState.IdRef="WriteTextFile_8" Text="[currentCityCounter.ToString]" />
                           </Sequence>
                         </ActivityAction>
                       </ui:ForEachRow.Body>
@@ -857,6 +920,12 @@
               <uix:NApplicationCard.TargetApp>
                 <uix:TargetApp Area="-9, -9, 1938, 1038" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHYSURBVGhD7ZnRccIwDEA1QkdgBEboX3/6wQiMwAiMwAiMwAj55ew7OgIjZAP15BgSS05iHAgWl493XEQt9BrHdmz42f2CZkSgNOCCX2BxAxaPYLEGg9/B97xBCfiit2DxBBYxoHQB/9+uReEpAmBxJxqMcwKDe544B5dH5udsgzYZCYaockV8H+f5JAb3QbvgYrrA7UeucMEVLzIGnHENBv9Ejj5mESAMHuhhDPLTg9kWSyNKeuFt3pkEWm7PyOPFxniDwHNRL2CxWgTezGcLHCINSmNAgGZS2aA01AvUi8Cb2egVMHjt1qtPgL0LaBQ4iRWuMgFC8TNAsBclXQIf8BAfdQucca1ZIFgD6RNgr5KLwOwoF6j4DKxFgDZ5xfpHi0AdGzY5JQrsaIOYLxn64AI82ZxQdwkWaimUI5C7Lc8E+k9GXkt0lk0hvLjgyu8kE/PtEfWM8SmIQPDl2HnVNOhEphk0MruPq5EHOC+6E7U7iaTRZmScH0MEOP4u8AKmYfDAfycXEYhxP7Olsy9eTA4TugxHBMbwt745LqJPKeXWLYOTYsIMm4oIpHDrv/fr5g5tu7On/xsu5wR5vimIwDNxR6jhKJa0vnkEEXg2HYnsQ/AhREAb/wtHXQXhKhQ0AAAAAElFTkSuQmCC" sap2010:WorkflowViewState.IdRef="TargetApp_2" InformativeScreenshot="8e4b64d593b3e6bc7586d81746fff515.jpg" Selector="&lt;html app='chrome.exe' title='Ohio Cities by Population (2025)' /&gt;" Title="Ohio Cities by Population (2025)" Url="[&quot;https://www.&quot;+States(IDX_2)+&quot;-demographics.com/cities_by_population&quot;]" />
               </uix:NApplicationCard.TargetApp>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
             </uix:NApplicationCard>
           </Sequence>
         </ActivityAction>
